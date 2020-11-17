@@ -1,0 +1,13 @@
+# action.yml
+name: 'Veracode Declare Configure'
+description: 'Use this action to Setup the Veracode estate required in the Declare configuration file'
+inputs:
+  configuration-file:
+    description: 'Path to Declare configuration file'
+    required: true
+    default: 'veracode.json'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.configuration-file }}
