@@ -1,2 +1,2 @@
 #!/bin/bash
-./Veracode.OSS.Declare -f $1
+Veracode.OSS.Declare -f $1
