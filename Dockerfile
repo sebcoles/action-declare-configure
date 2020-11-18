@@ -11,8 +11,10 @@ RUN curl -LO https://raw.githubusercontent.com/sebcoles/Veracode.OSS.Declare.Art
 RUN chmod +x ./get_latest.sh
 RUN ./get_latest.sh
 RUN rm get_latest.sh
+RUN . ~/.bashrc
 
 COPY entrypoint.sh /entrypoint.sh
 RUN chmod +x ./entrypoint.sh
 
 ENTRYPOINT ["/entrypoint.sh"]
+
