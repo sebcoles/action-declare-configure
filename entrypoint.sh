@@ -1,3 +1,3 @@
 #!/bin/bash
-echo /etc/environment
+cat /etc/environment
 Veracode.OSS.Declare -f $1
