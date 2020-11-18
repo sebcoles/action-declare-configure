@@ -12,6 +12,9 @@ RUN chmod +x ./get_latest.sh
 RUN ./get_latest.sh
 RUN rm get_latest.sh
 
+RUN . ~/.bashrc && \
+	echo $PATH > /etc/environment
+
 COPY entrypoint.sh /entrypoint.sh
 RUN chmod +x ./entrypoint.sh
 ENTRYPOINT ["/entrypoint.sh"]
