@@ -1,3 +1,3 @@
 #!/bin/bash
-cat $1
+. ~/.bashrc
 Veracode.OSS.Declare -f $1
